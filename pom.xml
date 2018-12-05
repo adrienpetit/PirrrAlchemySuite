@@ -10,10 +10,6 @@
 
 
     <properties>
-        <sonar.host.url>https://jenkins.ecam.be</sonar.host.url>
-
-        <sonar.language>java</sonar.language>
-        <sonar.scm.provider>git</sonar.scm.provider>
         <jre.level>11</jre.level>
         <jdk.level>11</jdk.level>
         <maven.compiler.source>11</maven.compiler.source>
@@ -80,11 +76,7 @@
                     <failOnViolation>false</failOnViolation>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.sonarsource.scanner.maven</groupId>
-                <artifactId>sonar-maven-plugin</artifactId>
-                <version>3.2</version>
-            </plugin>
+            
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
