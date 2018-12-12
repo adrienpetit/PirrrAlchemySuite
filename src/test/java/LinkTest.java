@@ -20,7 +20,7 @@ public class LinkTest {
 
     @Test
     public void getCreatedTest() {
-        assertEquals(50, lien.getCreated());
+        assertEquals(20, lien.getCreated());
     }
 
     @Test
