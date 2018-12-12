@@ -65,7 +65,7 @@ public final class MyApp {
 
     // Returns a MyElement object referenced as a result in "myLink".
     public static MyElement getCreated(Link myLink) {
-        return getUnknownElements().stream().filter(element -> element.getID().equals(myLink.getCreated())).findAny().orElseThrow();
+        return getUnknownElements().stream().filter(element -> element.getID() == (myLink.getCreated())).findAny().orElseThrow();
     }
 
     // Private constructor for static class.

@@ -16,7 +16,7 @@ public class Link {
     }
 
     //ID of the created element getter
-    public Integer getCreated() {
+    public int getCreated() {
         return created;
     }
 
@@ -27,7 +27,7 @@ public class Link {
     }
 
     //Second constructor, with the result (for the database loader)
-    public Link(Set<Integer> ids, Integer created){
+    public Link(Set<Integer> ids, int created){
         this.created = created;
         this.ids = ids;
     }
