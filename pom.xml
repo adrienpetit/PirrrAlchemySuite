@@ -43,11 +43,8 @@
                             <goal>prepare-agent</goal>
                             <goal>report</goal>
                         </goals>
-                        <goals>...</goals>
                     </execution>
-                    <execution>...</execution>
                 </executions>
-                <executions>...</executions>
             </plugin>
         </plugins>
     </build>
