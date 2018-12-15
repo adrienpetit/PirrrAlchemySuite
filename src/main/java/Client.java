@@ -1,6 +1,17 @@
 import java.util.Scanner;
 import java.util.Set;
 
+
+/**
+ * @author
+ * Groupe 5
+ * Bertrand
+ * Degeldt
+ * Peeters
+ * Raxhon
+ */
+
+
 //First class called
 //Reads the input and send a parsed sentence to the Context class
 public class Client {

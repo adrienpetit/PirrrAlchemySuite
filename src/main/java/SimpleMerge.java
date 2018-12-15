@@ -1,6 +1,16 @@
 import java.util.HashSet;
 import java.util.Set;
 
+
+/**
+ * @author
+ * Groupe 5
+ * Bertrand
+ * Degeldt
+ * Peeters
+ * Raxhon
+ */
+
 //Parts of the design pattern interpreter
 //Merges elements
 public class SimpleMerge extends NonTerminalExpression{

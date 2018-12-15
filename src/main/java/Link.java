@@ -1,5 +1,18 @@
 import java.util.Set;
 
+
+/**
+ * @author
+ * Groupe 5
+ * Bertrand
+ * Degeldt
+ * Peeters
+ * Raxhon
+ */
+
+
+
+
 //Link between two elements
 //Contains linked element and result of the merge
 public class Link {

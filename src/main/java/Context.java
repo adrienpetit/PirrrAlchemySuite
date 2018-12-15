@@ -1,6 +1,17 @@
 import java.util.HashSet;
 import java.util.Set;
 
+
+/**
+ * @author
+ * Groupe 5
+ * Bertrand
+ * Degeldt
+ * Peeters
+ * Raxhon
+ */
+
+
 //Reads the parsed sentence
 //Tries to find a link between the two elements in the sentence
 //Merges them if a link is found

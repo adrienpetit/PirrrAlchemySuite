@@ -9,6 +9,16 @@ import java.io.IOException;
 import java.lang.reflect.Type;
 import java.util.HashSet;
 
+
+/**
+ * @author
+ * Groupe 5
+ * Bertrand
+ * Degeldt
+ * Peeters
+ * Raxhon
+ */
+
 //STATIC CLASS
 //This is the status of the application
 public final class MyApp {

@@ -1,4 +1,16 @@
 
+
+
+/**
+ * @author
+ * Groupe 5
+ * Bertrand
+ * Degeldt
+ * Peeters
+ * Raxhon
+ */
+
+
 //Parts of the design pattern interpreter
 public class MyElement extends TerminalExpression {
 
