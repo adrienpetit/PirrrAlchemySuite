@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 
 
 
@@ -17,8 +19,8 @@ public class MyElement extends TerminalExpression {
     //name of the element
     private String name;
 
-    //id og the element
-    private Integer id;
+    //id of the element
+    private int id;
 
     //constructor
     public MyElement(String name, int id){
@@ -32,7 +34,7 @@ public class MyElement extends TerminalExpression {
     }
 
     //ID getter
-    public Integer getID(){
+    public int getID(){
         return this.id;
     }
 
@@ -46,7 +48,11 @@ public class MyElement extends TerminalExpression {
         return name;
     }
 
-    public boolean compare(MyElement element){
-        return (element.getID().equals(this.getID()) & element.getName().equals(this.getName()));
+    public List<Boolean> compare(MyElement element){
+        List<Boolean> compared = new ArrayList<>();
+        compared.add(element.getName().equals(this.getName()));
+        compared.add(element.getID() == this.getID());
+
+        return compared;
     }
 }
