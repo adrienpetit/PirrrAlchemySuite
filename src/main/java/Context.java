@@ -23,7 +23,7 @@ public class Context {
 
     /**
      * Constructor
-     * @param words
+     * @param words Var of initialisation
      */
     public Context(String[] words){
         this.words = words;
