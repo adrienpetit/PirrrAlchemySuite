@@ -54,8 +54,8 @@ public class Client {
     }
 
     /**
-     *
-     * @param elems 
+     * Display of the known elements
+     * @param elems Known elements
      * @return result+"\n"
      */
 
