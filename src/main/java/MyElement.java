@@ -30,8 +30,8 @@ public class MyElement extends TerminalExpression {
 
     /**
      * constructor
-     * @param name
-     * @param id
+     * @param name Name of the Element
+     * @param id ID of the Element
      */
     public MyElement(String name, int id){
         this.name = name;
@@ -64,6 +64,13 @@ public class MyElement extends TerminalExpression {
         return name;
     }
 
+	
+	/**
+	 * Comparing Element with another 
+	 * @param element Element to compare to
+	 * @return compared
+	 */
+	
     public List<Boolean> compare(MyElement element){
         List<Boolean> compared = new ArrayList<>();
         compared.add(element.getName().equals(this.getName()));

@@ -20,7 +20,7 @@ public class SimpleMerge extends NonTerminalExpression{
 
     /**
      * Constructor
-     * @param Elements
+     * @param Elements Set of Elements 
      */
     public SimpleMerge(Set<MyElement> Elements){
         this.Elements = Elements;

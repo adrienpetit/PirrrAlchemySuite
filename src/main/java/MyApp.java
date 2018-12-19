@@ -86,7 +86,7 @@ public final class MyApp {
 
     /**
      * Searches and returns a specific link if it is contained in the attribute "links".
-     * @param myLink
+     * @param myLink Link searched
      * @return link
      */
    public static Link findLink(Link myLink){
@@ -95,7 +95,7 @@ public final class MyApp {
 
     /**
      * Returns a MyElement object referenced as a result in "myLink".
-     * @param myLink
+     * @param myLink Link analyzed
      * @return getUnknownElements().stream().filter(element -> element.getID() == (myLink.getCreated())).findAny().orElseThrow()
      */
     public static MyElement getCreated(Link myLink) {
@@ -110,7 +110,7 @@ public final class MyApp {
 
     /**
      * Loads the jsons.
-     * @param path
+     * @param path path of access
      * @return JSONArray(content)
      */
     private static JSONArray loadJSON(String path) {
@@ -127,8 +127,8 @@ public final class MyApp {
 
     /**
      * Transforms a JSONArray to an existing set of elements.
-     * @param outSet
-     * @param jsonIn
+     * @param outSet Output Set
+     * @param jsonIn Input Array of JSON 
      */
     private static void jsonToSetOfElements(HashSet<MyElement> outSet, JSONArray jsonIn) {
 
@@ -146,8 +146,8 @@ public final class MyApp {
 
     /**
      * Transforms a JSONArray to an existing set of links.
-     * @param outSet
-     * @param jsonIn
+     * @param outSet Output Set
+     * @param jsonIn Input Array of JSON 
      */
     private static  void jsonToSetOfLinks(HashSet<Link> outSet, JSONArray jsonIn) {
 
@@ -186,7 +186,7 @@ public final class MyApp {
 
     /**
      * Called when an element is merged. Changes the element to "known" and saves.
-     * @param elem
+     * @param elem Element which is known
      */
     public static void elementMerged(MyElement elem){
         unknownElements.remove(elem);

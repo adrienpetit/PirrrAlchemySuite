@@ -46,7 +46,7 @@ public class Link {
 
     /**
      * First constructor, without result (for the fake link)
-     * @param ids
+     * @param ids Set of ID
      */
     public Link(Set<Integer> ids){
         this.ids = ids;
@@ -54,8 +54,8 @@ public class Link {
 
     /**
      * Second constructor, with the result (for the database loader)
-     * @param ids
-     * @param created
+     * @param ids Set of ID
+     * @param created State
      */
     public Link(Set<Integer> ids, int created){
         this.created = created;
@@ -64,7 +64,7 @@ public class Link {
 
     /**
      * Compares two links
-     * @param other
+     * @param other Other link
      * @return ids.equals(other.getIds())
      */
     public boolean  compare(Link other){

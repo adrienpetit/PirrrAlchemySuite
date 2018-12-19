@@ -46,8 +46,8 @@ public class Client {
 
     /**
      * Cuts the sentence into words
-     * @param input
-     * @return " "
+     * @param input sentence
+     * @return input.split(" ")
      */
     private static String[] parser(String input) {
         return input.split(" ");
@@ -55,8 +55,8 @@ public class Client {
 
     /**
      *
-     * @param elems
-     * @return
+     * @param elems 
+     * @return result+"\n"
      */
 
     private static String beautifulDisplayElements(Set<MyElement> elems){
