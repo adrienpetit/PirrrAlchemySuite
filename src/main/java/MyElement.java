@@ -13,27 +13,43 @@ import java.util.List;
  */
 
 
-//Parts of the design pattern interpreter
+/**
+ * Parts of the design pattern interpreter
+ */
 public class MyElement extends TerminalExpression {
 
-    //name of the element
+    /**
+     * name of the element
+     */
     private String name;
 
-    //id of the element
+    /**
+     * id of the element
+     */
     private int id;
 
-    //constructor
+    /**
+     * constructor
+     * @param name
+     * @param id
+     */
     public MyElement(String name, int id){
         this.name = name;
         this.id = id;
     }
 
-    //Name getter
+    /**
+     * Name getter
+     * @return this.name
+     */
     public String getName(){
         return this.name;
     }
 
-    //ID getter
+    /**
+     * ID getter
+     * @return this.id
+     */
     public int getID(){
         return this.id;
     }

@@ -11,21 +11,30 @@ import java.util.Set;
  * Raxhon
  */
 
-//Parts of the design pattern interpreter
-//Merges elements
+/**
+ * Parts of the design pattern interpreter
+ * Merges elements
+ */
 public class SimpleMerge extends NonTerminalExpression{
     private Set<MyElement> Elements;
 
-    //Constructor
+    /**
+     * Constructor
+     * @param Elements
+     */
     public SimpleMerge(Set<MyElement> Elements){
         this.Elements = Elements;
     }
 
 
-    //Interprets a merge based on elements he gets
-    //Create a fake link and compare it to existent links
-    //Move the element created from the unknown elements into the known elements
-    //@Override
+    /**
+     * Interprets a merge based on elements he gets
+     *     Create a fake link and compare it to existent links
+     *     Move the element created from the unknown elements into the known elements
+     *     @Override
+     *
+     * @return out
+     */
     public AbstractExpression interpret() {
         Set<Integer> ids = new HashSet<Integer>();
 

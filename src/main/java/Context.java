@@ -12,19 +12,26 @@ import java.util.Set;
  */
 
 
-//Reads the parsed sentence
-//Tries to find a link between the two elements in the sentence
-//Merges them if a link is found
+/**
+ * Reads the parsed sentence
+ * Tries to find a link between the two elements in the sentence
+ * Merges them if a link is found
+ */
 public class Context {
 
     private String[] words;
 
-    //Constructor
+    /**
+     * Constructor
+     * @param words
+     */
     public Context(String[] words){
         this.words = words;
     }
 
-    // Here is where the alchemy performs.
+    /**
+     * Here is where the alchemy performs.
+     */
     public void create(){
         Set<MyElement> knownElements  = MyApp.getKnownElements();
         Set<MyElement> elementsToMerge = new HashSet<MyElement>();

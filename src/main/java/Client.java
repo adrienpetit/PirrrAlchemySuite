@@ -12,17 +12,24 @@ import java.util.Set;
  */
 
 
-//First class called
-//Reads the input and send a parsed sentence to the Context class
+/**
+ * First class called
+ * Reads the input and send a parsed sentence to the Context class
+ */
 public class Client {
 
-    //Starting point of the application
+    /**
+     * Starting point of the application
+     * @param args
+     */
     public static void main (String[] args) {
         MyApp.load();
         clientControl();
     }
 
-    //Reads and executes command line control
+    /**
+     * Reads and executes command line control
+     */
     private static void clientControl(){
         String s = "";
         while (!s.equals("stop")) {
@@ -37,12 +44,20 @@ public class Client {
         }
     }
 
-    //Cuts the sentence into words
+    /**
+     * Cuts the sentence into words
+     * @param input
+     * @return " "
+     */
     private static String[] parser(String input) {
         return input.split(" ");
     }
 
-    //Returns a string for a nice display of the elements
+    /**
+     * Returns a string for a nice display of the elements
+     * @param elems
+     * @return result+"\n"
+     */
     private static String beautifulDisplayElements(Set<MyElement> elems){
         String result = "Known elements : \n";
         int i = 0;
