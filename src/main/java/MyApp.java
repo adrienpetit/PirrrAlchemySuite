@@ -5,7 +5,6 @@ import com.google.gson.reflect.TypeToken;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
-import java.io.IOException;
 import java.lang.reflect.Type;
 import java.util.HashSet;
 
@@ -92,7 +91,7 @@ public final class MyApp {
      * @return getUnknownElements()
      */
     public static MyElement getCreated(Link myLink) {
-        return getUnknownElements().stream().filter(element -> element.getID() == (myLink.getCreated())).findAny().orElseThrow();
+        return getUnknownElements().stream().filter(element -> element.getID() == myLink.getCreated()).findAny().orElseThrow();
     }
 
     /**
@@ -121,7 +120,7 @@ public final class MyApp {
     /**
      * Transforms a JSONArray to an existing set of elements.
      * @param outSet Output Set
-     * @param jsonIn Input Array of JSON 
+     * @param jsonIn Input Array of JSON
      */
     private static void jsonToSetOfElements(HashSet<MyElement> outSet, JSONArray jsonIn) {
 
@@ -140,7 +139,7 @@ public final class MyApp {
     /**
      * Transforms a JSONArray to an existing set of links.
      * @param outSet Output Set
-     * @param jsonIn Input Array of JSON 
+     * @param jsonIn Input Array of JSON
      */
     private static  void jsonToSetOfLinks(HashSet<Link> outSet, JSONArray jsonIn) {
 
