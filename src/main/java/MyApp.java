@@ -96,7 +96,7 @@ public final class MyApp {
     /**
      * Returns a MyElement object referenced as a result in "myLink".
      * @param myLink
-     * @return
+     * @return getUnknownElements().stream().filter(element -> element.getID() == (myLink.getCreated())).findAny().orElseThrow()
      */
     public static MyElement getCreated(Link myLink) {
         return getUnknownElements().stream().filter(element -> element.getID() == (myLink.getCreated())).findAny().orElseThrow();

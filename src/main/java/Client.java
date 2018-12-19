@@ -20,7 +20,6 @@ public class Client {
 
     /**
      * Starting point of the application
-     * @param args
      */
     public static void main (String[] args) {
         MyApp.load();
@@ -46,7 +45,7 @@ public class Client {
 
     /**
      * Cuts the sentence into words
-     * @param input
+     * @param input String enter
      * @return " "
      */
     private static String[] parser(String input) {
@@ -55,7 +54,7 @@ public class Client {
 
     /**
      * Returns a string for a nice display of the elements
-     * @param elems
+     * @param elems Elements
      * @return result+"\n"
      */
     private static String beautifulDisplayElements(Set<MyElement> elems){
