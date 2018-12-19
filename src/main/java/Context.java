@@ -2,14 +2,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 
-/**
- * @author
- * Groupe 5
- * Bertrand
- * Degeldt
- * Peeters
- * Raxhon
- */
+
 
 
 /**

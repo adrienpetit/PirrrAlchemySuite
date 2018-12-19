@@ -10,14 +10,7 @@ import java.lang.reflect.Type;
 import java.util.HashSet;
 
 
-/**
- * @author
- * Groupe 5
- * Bertrand
- * Degeldt
- * Peeters
- * Raxhon
- */
+
 
 /**
  *STATIC CLASS

@@ -3,14 +3,6 @@ import java.util.List;
 
 
 
-/**
- * @author
- * Groupe 5
- * Bertrand
- * Degeldt
- * Peeters
- * Raxhon
- */
 
 
 /**
