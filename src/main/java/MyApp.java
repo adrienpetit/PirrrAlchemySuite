@@ -19,8 +19,11 @@ import java.util.HashSet;
  * Raxhon
  */
 
-//STATIC CLASS
-//This is the status of the application
+/**
+ *STATIC CLASS
+ *This is the status of the application
+ */
+
 public final class MyApp {
     private static HashSet<MyElement> knownElements = new HashSet<MyElement>();
     private static HashSet<MyElement> unknownElements = new HashSet<MyElement>();
@@ -31,22 +34,33 @@ public final class MyApp {
             "src/main/resources/links.json"};
     private static JSONArray[] jsonObjectsBuffer = new JSONArray[3];
 
-    // Gets an HashSet of the elements known by the user.
+    /**
+     * Gets an HashSet of the elements known by the user.
+     * @return knownElements
+     */
     public static HashSet<MyElement> getKnownElements() {
         return knownElements;
     }
 
-    // Gets an HashSet of the elements unknown by the user.
+    /**
+     * Gets an HashSet of the elements unknown by the user.
+     * @return unknownElements
+     */
     public static HashSet<MyElement> getUnknownElements() {
         return unknownElements;
     }
 
-    // Gets an HashSet of the links between the elements.
+    /**
+     * Gets an HashSet of the links between the elements.
+     * @return links
+     */
     public static HashSet<Link> getLinks() {
         return links;
     }
 
-    // Loads the JSON (links, unknownElements, knownElements).
+    /**
+     * Loads the JSON (links, unknownElements, knownElements).
+     */
     public static void load() {
         System.out.println("Load DB");
         int i = 0;
@@ -60,7 +74,9 @@ public final class MyApp {
         askIfWin();
     }
 
-    // Closes the app if the game is won.
+    /**
+     * Closes the app if the game is won.
+     */
     public static void askIfWin() {
         if (unknownElements.size()==0) {
             System.out.println("You finished the game.");
@@ -68,21 +84,35 @@ public final class MyApp {
         }
     }
 
-    // Searches and returns a specific link if it is contained in the attribute "links".
+    /**
+     * Searches and returns a specific link if it is contained in the attribute "links".
+     * @param myLink
+     * @return link
+     */
    public static Link findLink(Link myLink){
         return getLinks().stream().filter(link -> myLink.compare(link)).findAny().orElseThrow();
     }
 
-    // Returns a MyElement object referenced as a result in "myLink".
+    /**
+     * Returns a MyElement object referenced as a result in "myLink".
+     * @param myLink
+     * @return
+     */
     public static MyElement getCreated(Link myLink) {
         return getUnknownElements().stream().filter(element -> element.getID() == (myLink.getCreated())).findAny().orElseThrow();
     }
 
-    // Private constructor for static class.
+    /**
+     * Private constructor for static class.
+     */
     private MyApp () {
     }
 
-    // Loads the jsons.
+    /**
+     * Loads the jsons.
+     * @param path
+     * @return JSONArray(content)
+     */
     private static JSONArray loadJSON(String path) {
         try {
             File file = new File(path);
@@ -95,7 +125,11 @@ public final class MyApp {
         }
     }
 
-    // Transforms a JSONArray to an existing set of elements.
+    /**
+     * Transforms a JSONArray to an existing set of elements.
+     * @param outSet
+     * @param jsonIn
+     */
     private static void jsonToSetOfElements(HashSet<MyElement> outSet, JSONArray jsonIn) {
 
         try {
@@ -110,7 +144,11 @@ public final class MyApp {
         }
     }
 
-    // Transforms a JSONArray to an existing set of links.
+    /**
+     * Transforms a JSONArray to an existing set of links.
+     * @param outSet
+     * @param jsonIn
+     */
     private static  void jsonToSetOfLinks(HashSet<Link> outSet, JSONArray jsonIn) {
 
         try {
@@ -125,7 +163,10 @@ public final class MyApp {
         }
     }
 
-    // Saves the known and unknown elements into json.
+
+    /**
+     * Saves the known and unknown elements into json.
+     */
     public static void save(){
         try {
             BufferedWriter known = new BufferedWriter(new FileWriter(paths[0]));
@@ -143,7 +184,10 @@ public final class MyApp {
         }
     }
 
-    // Called when an element is merged. Changes the element to "known" and saves.
+    /**
+     * Called when an element is merged. Changes the element to "known" and saves.
+     * @param elem
+     */
     public static void elementMerged(MyElement elem){
         unknownElements.remove(elem);
         knownElements.add(elem);
