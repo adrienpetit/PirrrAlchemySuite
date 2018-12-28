@@ -36,6 +36,7 @@ public class MyAppTest {
 
     @Test
     public void getKnownElements() {
+        assertTrue(MyApp.getKnownElements().contains(valid_element));
     }
 
     @Test
@@ -48,6 +49,7 @@ public class MyAppTest {
 
     @Test
     public void load() {
+
     }
 
     @Test
