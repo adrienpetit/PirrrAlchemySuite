@@ -3,10 +3,6 @@ import org.junit.Test;
 import java.util.HashSet;
 import java.util.Set;
 
-
-
-import java.util.HashSet;
-
 import static org.junit.Assert.*;
 
 
@@ -14,7 +10,6 @@ public class MyAppTest {
 
     Link valid_link;
     MyElement valid_element;
-    Link bad_link;
 
     @Before
     public void setUp() {
@@ -24,31 +19,37 @@ public class MyAppTest {
         Set<Integer> valid_ids = new HashSet<Integer>();
         valid_ids.add(2);
         valid_ids.add(3);
-        valid_link = new Link(valid_ids, 5);
+        Link valid_link = new Link(valid_ids, 5);
 
         Set<Integer> bad_ids = new HashSet<Integer>();
         bad_ids.add(0);
         bad_ids.add(0);
-        bad_link = new Link(valid_ids, 0);
+        Link bad_link = new Link(valid_ids, 0);
 
-        valid_element = new MyElement("mud", 5);
+        MyElement valid_element = new MyElement("mud", 5);
     }
 
     @Test
-    public void getKnownElements() {
-        assertTrue(MyApp.getKnownElements().contains(valid_element));
+    public void getKnownElementsTest() {
+        Boolean x = MyApp.getKnownElements().contains(valid_element);
+        MyApp.getKnownElements().add(valid_element);
+        assertNotEquals(x, MyApp.getKnownElements().contains(valid_element));
     }
 
     @Test
-    public void getUnknownElements() {
+    public void getUnknownElementsTest() {
+        Boolean x = MyApp.getUnknownElements().contains(valid_element);
+        MyApp.getUnknownElements().add(valid_element);
+        assertNotEquals(x, MyApp.getUnknownElements().contains(valid_element));
     }
 
     @Test
     public void getLinks() {
+
     }
 
     @Test
-    public void load() {
+    public void loadTest() {
 
     }
 
@@ -66,7 +67,7 @@ public class MyAppTest {
 
     @Test
     public void findLink() {
-        assertTrue(MyApp.findLink(valid_link).compare(valid_link));
+        //assertTrue(MyApp.findLink(valid_link).compare(valid_link));
         //bad_link should throw an exception
     }
 

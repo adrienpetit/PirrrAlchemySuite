@@ -63,7 +63,6 @@ public final class MyApp {
         jsonToSetOfElements(knownElements, jsonObjectsBuffer[0]);
         jsonToSetOfElements(unknownElements, jsonObjectsBuffer[1]);
         jsonToSetOfLinks(links, jsonObjectsBuffer[2]);
-        askIfWin();
     }
 
     /**
