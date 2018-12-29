@@ -31,9 +31,7 @@ public class MyAppTest {
 
     @Test
     public void getKnownElementsTest() {
-        Boolean x = MyApp.getKnownElements().contains(valid_element);
-        MyApp.getKnownElements().add(valid_element);
-        assertNotEquals(x, MyApp.getKnownElements().contains(valid_element));
+        assertEquals(1, MyApp.getKnownElements().size());
     }
 
     @Test
