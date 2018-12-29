@@ -44,12 +44,11 @@ public class ContextTest {
         */
     }
 
-    @Test (expected = Exception.class)
+    @Test (expected = AssertionError.class)
     public void TestCreate_false() {
         context_true.create();
         assertTrue(MyApp.getKnownElements().contains("mud"));
     
-
     }
 
 }
