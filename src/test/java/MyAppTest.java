@@ -28,7 +28,7 @@ public class MyAppTest {
 
         MyElement valid_element = new MyElement("mud", 5);
     }
-
+    /*
     @Test
     public void getKnownElementsTest() {
         //assertEquals(1, MyApp.getKnownElements().size());
@@ -36,13 +36,13 @@ public class MyAppTest {
 
     @Test
     public void getUnknownElementsTest() {
-        /*
+        
         Boolean x = MyApp.getUnknownElements().contains(valid_element);
         MyApp.getUnknownElements().add(valid_element);
         assertNotEquals(x, MyApp.getUnknownElements().contains(valid_element));
-        */
+        
     }
-
+    
     @Test
     public void getLinks() {
 
@@ -74,5 +74,5 @@ public class MyAppTest {
     @Test
     public void getCreated() {
         // One should create separate resources for tests.
-    }
+    }*/
 }
