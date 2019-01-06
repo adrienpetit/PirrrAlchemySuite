@@ -30,12 +30,7 @@ public class ContextTest {
     @Test
     public void TestCreateMud() {
         
-        MyElement elem1 = new MyElement("water", 2);
-        MyElement elem2 = new MyElement("earth", 3);
         MyElement elem3 = new MyElement("mud", 5);
-
-        //MyApp.getKnownElements().add(elem1);
-        //MyApp.getKnownElements().add(elem2);
 
         MyApp.elementMerged(elem3);
 

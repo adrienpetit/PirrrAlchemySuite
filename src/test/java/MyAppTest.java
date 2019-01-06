@@ -28,51 +28,5 @@ public class MyAppTest {
 
         MyElement valid_element = new MyElement("mud", 5);
     }
-    /*
-    @Test
-    public void getKnownElementsTest() {
-        //assertEquals(1, MyApp.getKnownElements().size());
-    }
-
-    @Test
-    public void getUnknownElementsTest() {
-        
-        Boolean x = MyApp.getUnknownElements().contains(valid_element);
-        MyApp.getUnknownElements().add(valid_element);
-        assertNotEquals(x, MyApp.getUnknownElements().contains(valid_element));
-        
-    }
     
-    @Test
-    public void getLinks() {
-
-    }
-
-    @Test
-    public void loadTest() {
-
-    }
-
-    @Test
-    public void askIfWin() {
-    }
-
-    @Test
-    public void save() {
-    }
-
-    @Test
-    public void elementMerged() {
-    }
-
-    @Test
-    public void findLink() {
-        //assertTrue(MyApp.findLink(valid_link).compare(valid_link));
-        //bad_link should throw an exception
-    }
-
-    @Test
-    public void getCreated() {
-        // One should create separate resources for tests.
-    }*/
 }
