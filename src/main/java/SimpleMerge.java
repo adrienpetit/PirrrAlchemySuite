@@ -19,7 +19,6 @@ public class SimpleMerge extends NonTerminalExpression{
         this.Elements = Elements;
     }
 
-
     /**
      * Interprets a merge based on elements he gets
      * Create a fake link and compare it to existent links

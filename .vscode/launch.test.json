@@ -1,0 +1,30 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "Pirrralchemy",
+                "projectName": "Pirrralchemy",
+                "workingDirectory": "d:\\4MA\\TDD Projet\\PirrrAlchemySuite",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "Pirrralchemy",
+                "projectName": "Pirrralchemy",
+                "workingDirectory": "d:\\4MA\\TDD Projet\\PirrrAlchemySuite",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}
