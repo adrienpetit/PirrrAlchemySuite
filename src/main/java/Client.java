@@ -6,8 +6,8 @@ import java.util.Set;
 
 
 /**
- * First class called
- * Reads the input and send a parsed sentence to the Context class
+ * First class called,
+ * Reads the input and send a parsed sentence to the Context class.
  */
 public class Client {
 
