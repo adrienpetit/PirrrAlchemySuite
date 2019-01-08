@@ -12,7 +12,7 @@ import java.util.Set;
 public class Client {
 
     /**
-     * Starting point of the application
+     * Starting point of the application.
      * @param args arguments
      */
     public static void main (String[] args) {
@@ -21,7 +21,7 @@ public class Client {
     }
 
     /**
-     * Reads and executes command line control
+     * Reads and executes command line control.
      */
     private static void clientControl(){
         String s = "";
@@ -38,7 +38,7 @@ public class Client {
     }
 
     /**
-     * Cuts the sentence into words
+     * Cuts the sentence into words.
      * @param input sentence
      * @return input.split(" ")
      */
@@ -47,7 +47,7 @@ public class Client {
     }
 
     /**
-     * Display of the known elements
+     * Display of the known elements.
      * @param elems Known elements
      * @return result+"\n"
      */

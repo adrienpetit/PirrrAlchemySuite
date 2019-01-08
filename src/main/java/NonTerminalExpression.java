@@ -1,4 +1,4 @@
 /**
- * To Design pattern purpose
+ * To Design pattern purpose.
  */
 public abstract class NonTerminalExpression implements AbstractExpression{}
