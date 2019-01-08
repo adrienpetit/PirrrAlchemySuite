@@ -12,8 +12,8 @@ import java.util.HashSet;
 
 
 /**
- *STATIC CLASS
- *This is the status of the application
+ * STATIC CLASS,
+ * This is the status of the application.
  */
 
 public final class MyApp {

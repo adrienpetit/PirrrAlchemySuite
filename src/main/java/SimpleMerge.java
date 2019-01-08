@@ -5,14 +5,14 @@ import java.util.Set;
 
 
 /**
- * Parts of the design pattern interpreter
- * Merges elements
+ * Parts of the design pattern interpreter,
+ * Merges elements.
  */
 public class SimpleMerge extends NonTerminalExpression{
     private Set<MyElement> Elements;
 
     /**
-     * Constructor
+     * Constructor.
      * @param Elements Set of Elements
      */
     public SimpleMerge(Set<MyElement> Elements){
@@ -20,9 +20,9 @@ public class SimpleMerge extends NonTerminalExpression{
     }
 
     /**
-     * Interprets a merge based on elements he gets
-     * Create a fake link and compare it to existent links
-     * Move the element created from the unknown elements into the known elements
+     * Interprets a merge based on elements he gets,
+     * Create a fake link and compare it to existent links,
+     * Move the element created from the unknown elements into the known elements.
      * @return out
      */
     public AbstractExpression interpret() {

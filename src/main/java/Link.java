@@ -5,23 +5,23 @@ import java.util.Set;
 
 
 /**
- * Link between two elements
- * Contains linked element and result of the merge
+ * Link between two elements,
+ * Contains linked element and result of the merge.
  */
 public class Link {
 
     /**
-     * IDs of the linked element
+     * IDs of the linked element.
      */
     private Set<Integer> ids;
 
     /**
-     * ID of the created element
+     * ID of the created element.
      */
     private int created;
 
     /**
-     * IDs getter
+     * IDs getter.
      * @return ids
      */
     public Set<Integer> getIds() {
@@ -29,7 +29,7 @@ public class Link {
     }
 
     /**
-     * ID of the created element getter
+     * ID of the created element getter.
      * @return created
      */
     public int getCreated() {
@@ -38,7 +38,7 @@ public class Link {
 
 
     /**
-     * First constructor, without result (for the fake link)
+     * First constructor, without result (for the fake link).
      * @param ids Set of ID
      */
     public Link(Set<Integer> ids){
@@ -46,7 +46,7 @@ public class Link {
     }
 
     /**
-     * Second constructor, with the result (for the database loader)
+     * Second constructor, with the result (for the database loader).
      * @param ids Set of ID
      * @param created State
      */
@@ -56,7 +56,7 @@ public class Link {
     }
 
     /**
-     * Compares two links
+     * Compares two links.
      * @param other Other link
      * @return ids.equals(other.getIds())
      */

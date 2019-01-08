@@ -11,17 +11,17 @@ import java.util.List;
 public class MyElement extends TerminalExpression {
 
     /**
-     * name of the element
+     * name of the element.
      */
     private String name;
 
     /**
-     * id of the element
+     * id of the element.
      */
     private int id;
 
     /**
-     * constructor
+     * constructor.
      * @param name Name of the Element
      * @param id ID of the Element
      */
@@ -31,7 +31,7 @@ public class MyElement extends TerminalExpression {
     }
 
     /**
-     * Name getter
+     * Name getter.
      * @return this.name
      */
     public String getName(){
@@ -39,7 +39,7 @@ public class MyElement extends TerminalExpression {
     }
 
     /**
-     * ID getter
+     * ID getter.
      * @return this.id
      */
     public int getID(){
@@ -58,7 +58,7 @@ public class MyElement extends TerminalExpression {
 
 	
 	/**
-	 * Comparing Element with another 
+	 * Comparing Element with another.
 	 * @param element Element to compare to
 	 * @return compared
 	 */
