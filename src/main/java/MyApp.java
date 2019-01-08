@@ -17,13 +17,18 @@ import java.util.HashSet;
  */
 
 public final class MyApp {
+    
     private static HashSet<MyElement> knownElements = new HashSet<MyElement>();
+
     private static HashSet<MyElement> unknownElements = new HashSet<MyElement>();
+
     private static HashSet<Link> links = new HashSet<Link>();
+
     private static String[] paths = new String[]{
             "src/main/resources/known.json",
             "src/main/resources/unknown.json",
             "src/main/resources/links.json"};
+
     private static JSONArray[] jsonObjectsBuffer = new JSONArray[3];
 
     /**

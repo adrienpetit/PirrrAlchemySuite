@@ -9,6 +9,10 @@ import java.util.Set;
  * Merges elements.
  */
 public class SimpleMerge extends NonTerminalExpression{
+
+    /**
+     * Set of Elements we will try to merge.
+     */
     private Set<MyElement> Elements;
 
     /**

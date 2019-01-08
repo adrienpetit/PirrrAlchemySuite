@@ -8,6 +8,9 @@ import java.util.Set;
  */
 public class Context {
 
+    /**
+     * Words of the sentence.
+     */
     private String[] words;
 
     /**
